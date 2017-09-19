@@ -25,6 +25,9 @@ public class EntryControllerTest {
         //Third commit test carEventDetecte method IDLE method
         enCon.carEventDetected("Detect 002", true);
         
+        //Fourth commit test carEventDetecte method IDLE method
+        enCon.carEventDetected("Detect 003", false);
+        
     }
     
 }
