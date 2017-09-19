@@ -16,17 +16,20 @@ public class EntryControllerTest {
         
         //first commit log method and create test package 
         EntryController enCon = new EntryController();
-        enCon.log("Lassana malsha");
+        //enCon.log("Lassana malsha");
         
         
         //2 commit 
-        enCon.carEventDetected("Detect 001", true);
+       // enCon.carEventDetected("Detect 001", true);
         
         //Third commit test carEventDetecte method IDLE method
-        enCon.carEventDetected("Detect 002", true);
+       // enCon.carEventDetected("Detect 002", true);
         
         //Fourth commit test carEventDetecte method IDLE method
-        enCon.carEventDetected("Detect 003", false);
+       // enCon.carEventDetected("Detect 003", false);
+        
+        //Fourth commit test carEventDetecte method IDLE method
+        enCon.carEventDetected("Detect 005", true);
         
     }
     
