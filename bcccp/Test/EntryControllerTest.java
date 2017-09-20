@@ -12,6 +12,8 @@ import bcccp.carpark.entry.EntryController;
  */
 public class EntryControllerTest {
     
+    
+    
     public static void main(String[] args){
         
         //first commit log method and create test package 
@@ -29,7 +31,8 @@ public class EntryControllerTest {
        // enCon.carEventDetected("Detect 003", false);
         
         //Fourth commit test carEventDetecte method IDLE method
-        enCon.carEventDetected("Detect 005", true);
+        enCon.buttonPushed();
+        
         
     }
     
