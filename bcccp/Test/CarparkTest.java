@@ -18,7 +18,11 @@ public class CarparkTest {
             Carpark cCon=new Carpark();
             String c=cCon.getName();
             System.out.println(c);
-    
+            
+            
+        //11th commit check log method
+           float charge=cCon. calculateAddHocTicketCharge(23);
+           System.out.println(charge);
    
     }
    
