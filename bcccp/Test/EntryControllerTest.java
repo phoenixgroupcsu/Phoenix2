@@ -34,7 +34,10 @@ public class EntryControllerTest {
       //  enCon.buttonPushed();
         
         //seventh commit test ticketInserted method
-        enCon.ticketInserted("AAA001");
+      //  enCon.ticketInserted("AAA001");
+        
+        //Ninth commit test notifyCarparkEvent method
+        enCon.notifyCarparkEvent();
         
     }
     
