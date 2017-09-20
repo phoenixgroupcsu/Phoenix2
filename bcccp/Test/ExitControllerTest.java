@@ -9,5 +9,8 @@ package bcccp.Test;
  * @author nathasha
  */
 public class ExitControllerTest {
-    
+ 
+    public static void main(String [] args){
+        
+    }
 }
