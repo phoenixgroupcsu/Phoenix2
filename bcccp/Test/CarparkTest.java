@@ -20,9 +20,13 @@ public class CarparkTest {
             System.out.println(c);
             
             
-        //11th commit check log method
+        //11th commit check calculateAddHocTicketCharge method
            float charge=cCon. calculateAddHocTicketCharge(23);
            System.out.println(charge);
+           
+           //12th commit check isSeasonTicketValid method
+           boolean state=cCon.isSeasonTicketValid("012356");
+          System.out.println(state);
    
     }
    
