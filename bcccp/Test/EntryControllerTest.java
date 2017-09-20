@@ -22,7 +22,7 @@ public class EntryControllerTest {
         
         
         //2 commit 
-       // enCon.carEventDetected("Detect 001", true);
+       //enCon.carEventDetected("Detect 001", true);
         
         //Third commit test carEventDetecte method IDLE method
        // enCon.carEventDetected("Detect 002", true);
@@ -30,9 +30,11 @@ public class EntryControllerTest {
         //Fourth commit test carEventDetecte method IDLE method
        // enCon.carEventDetected("Detect 003", false);
         
-        //Fourth commit test carEventDetecte method IDLE method
-        enCon.buttonPushed();
+        //sixth commit test carEventDetecte method IDLE method
+      //  enCon.buttonPushed();
         
+        //seventh commit test ticketInserted method
+        enCon.ticketInserted("AAA001");
         
     }
     
