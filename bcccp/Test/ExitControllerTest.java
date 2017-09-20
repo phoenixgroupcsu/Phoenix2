@@ -19,6 +19,9 @@ public class ExitControllerTest {
         //13th commit test carEventDetected
         exit.carEventDetected("A1562", true);
         
+        //14th commit test carEventDetected and set state as idle
+        exit.carEventDetected("A1562", true);
+        
         
         
     }
