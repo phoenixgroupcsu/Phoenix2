@@ -46,7 +46,8 @@ public class ExitController
 		ui.registerController(this);
 
 		prevState = STATE.IDLE;		
-		setState(STATE.IDLE);		
+		setState(STATE.IDLE);	
+		setState(STATE.IDLE);
 	}
 
 	
@@ -132,6 +133,8 @@ public class ExitController
 	
 	
 	private void setState(STATE newState) {
+		public void setState(STATE newState) {
+			newState = STATE.BLOCKED;
 		switch (newState) {
 		
 		case BLOCKED: 
@@ -240,7 +243,7 @@ public class ExitController
 			
 		}
 				
-	}
+	}}
 
 	
 	
