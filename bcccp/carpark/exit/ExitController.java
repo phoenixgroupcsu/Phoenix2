@@ -63,6 +63,7 @@ public class ExitController
 	@Override
 	public void carEventDetected(String detectorId, boolean carDetected) {
 		state = STATE.BLOCKED;
+		state = STATE.PROCESSED;
 		log("carEventDetected: " + detectorId + ", car Detected: " + carDetected );
 		
 		switch (state) {
