@@ -39,6 +39,13 @@ public class EntryControllerTest {
         //Ninth commit test notifyCarparkEvent method
         enCon.notifyCarparkEvent();
         
+        //First integration test test button pushed method
+        CarSensor os = new CarSensor("CAR1", 1, 2);
+ 		EntryUI ui = new EntryUI(1, 2);
+ 		EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+        controller.buttonPushed();
+-		controller.carEventDetected("CAR1", true);
+        
     }
     
 }
