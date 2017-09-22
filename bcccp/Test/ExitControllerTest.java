@@ -50,6 +50,7 @@ public class ExitControllerTest {
         
         exitController.setState(null);
 		exitController.carEventDetected("Exit Car 2", true);
+	    exitController.setState(null);
         
     }
 }
