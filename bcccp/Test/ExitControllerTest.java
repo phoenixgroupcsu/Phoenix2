@@ -38,8 +38,8 @@ public class ExitControllerTest {
 		ExitUI exitUI = new ExitUI(2, 3);
 
 		ExitController exitController = new ExitController(carpark, exitGate, is, os, exitUI);
-		exitController.log("Welcome for testing");
-	    exitController.carEventDetected("Exit Car 2", true);
+		//exitController.log("Welcome for testing");
+	    //exitController.carEventDetected("Exit Car 2", true);
         //ExitController exit=new ExitController();
         
         //13th commit test carEventDetected
@@ -48,7 +48,8 @@ public class ExitControllerTest {
         //14th commit test carEventDetected and set state as idle
         //exit.carEventDetected("A1562", true);
         
-        
+        exitController.setState(null);
+		exitController.carEventDetected("Exit Car 2", true);
         
     }
 }
