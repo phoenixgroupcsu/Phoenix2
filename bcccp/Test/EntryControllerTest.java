@@ -45,9 +45,12 @@ public class EntryControllerTest {
  		//EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
        // controller.buttonPushed();
 -		//controller.carEventDetected("CAR1", true);
-        EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
-        controller.ticketInserted("bar1");
-        controller.ticketTaken();
+        //EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+       // controller.ticketInserted("bar1");
+        //controller.ticketTaken();
+    
+    controller.ticketTaken();
+    controller.notifyCarparkEvent();
     }
     
 }
