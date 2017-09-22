@@ -17,7 +17,7 @@ public class EntryControllerTest {
     public static void main(String[] args){
         
         //first commit log method and create test package 
-        EntryController enCon = new EntryController();
+       // EntryController enCon = new EntryController();
         //enCon.log("Lassana malsha");
         
         
@@ -37,15 +37,17 @@ public class EntryControllerTest {
       //  enCon.ticketInserted("AAA001");
         
         //Ninth commit test notifyCarparkEvent method
-        enCon.notifyCarparkEvent();
+       // enCon.notifyCarparkEvent();
         
         //First integration test test button pushed method
-        CarSensor os = new CarSensor("CAR1", 1, 2);
- 		EntryUI ui = new EntryUI(1, 2);
- 		EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
-        controller.buttonPushed();
--		controller.carEventDetected("CAR1", true);
-        
+       // CarSensor os = new CarSensor("CAR1", 1, 2);
+ 		//EntryUI ui = new EntryUI(1, 2);
+ 		//EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+       // controller.buttonPushed();
+-		//controller.carEventDetected("CAR1", true);
+        EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+        controller.ticketInserted("bar1");
+        controller.ticketTaken();
     }
     
 }
