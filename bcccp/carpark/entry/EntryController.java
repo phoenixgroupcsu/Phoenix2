@@ -47,6 +47,7 @@ public class EntryController
 		ui.registerController(this);
 		
 		setState(STATE.IDLE);
+		setState(STATE.ENTERING);
 		
 	}
 
@@ -246,16 +247,18 @@ public class EntryController
 	
 	@Override
 	public void buttonPushed() {
+		state_ = STATE.WAITING;
 		if (state_ == STATE.WAITING) {
 			if (!carpark.isFull()) {
 				adhocTicket = carpark.issueAdhocTicket();
 				
 				String carparkId = adhocTicket.getCarparkId();
 				int ticketNo = adhocTicket.getTicketNo();
+				
 				entryTime = System.currentTimeMillis();
 				//entryTime = adhocTicket.getEntryDateTime();
 				String barcode = adhocTicket.getBarcode();
-				
+				System.out.println("EntryTime" + entryTime + "   Barcode" + barcode);
 				ui.printTicket(carparkId, ticketNo, entryTime, barcode);
 				setState(STATE.ISSUED);
 			}
