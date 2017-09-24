@@ -18,9 +18,9 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	
 	public AdhocTicketDAO(IAdhocTicketFactory adhocTicketFactory) {
 		this.adhocTicketFactory_ = adhocTicketFactory;
-		currentTickets = new HashMap<>();		
+		currentTickets = new HashMap<>();	
+		currentAdhocTickets = new ArrayList();		
 	}
-
 	
 	
 	@Override
