@@ -12,7 +12,9 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	private IAdhocTicketFactory adhocTicketFactory_;
 	private int currentTicketNo;
 
-	
+	private List<IAdhocTicket> currentAdhocTickets;
+		
+		
 	
 	public AdhocTicketDAO(IAdhocTicketFactory adhocTicketFactory) {
 		this.adhocTicketFactory_ = adhocTicketFactory;
