@@ -34,6 +34,10 @@ public class AdhocTicketDAO  implements IAdhocTicketDAO  {
 	
 	@Override
 	public IAdhocTicket findTicketByBarcode(String barcode) {
+		for int i = 0; i <currentAdhocTickets.size (); i++0 
+		{ 
+		return currentAdhocTickets.get (i); 
+		{
 		return currentTickets.get(barcode);
 	}	
 
