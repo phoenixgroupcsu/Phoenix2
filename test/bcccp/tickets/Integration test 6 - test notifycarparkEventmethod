@@ -1,0 +1,34 @@
+     
+         //Third commit test carEventDetecte method IDLE method
+        // enCon.carEventDetected("Detect 002", true);
+         
+         //Fourth commit test carEventDetecte method IDLE method
+        // enCon.carEventDetected("Detect 003", false);
+         
+         //sixth commit test carEventDetecte method IDLE method
+       //  enCon.buttonPushed();
+         
+         //seventh commit test ticketInserted method
+       //  enCon.ticketInserted("AAA001");
+         
+         //Ninth commit test notifyCarparkEvent method
+        // enCon.notifyCarparkEvent();
+         
+         //First integration test test button pushed method
+        // CarSensor os = new CarSensor("CAR1", 1, 2);
+  		//EntryUI ui = new EntryUI(1, 2);
+   		//EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+         // controller.buttonPushed();
+  -		//controller.carEventDetected("CAR1", true);
+ -        EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+ -        controller.ticketInserted("bar1");
+ -        controller.ticketTaken();
+ +        //EntryController controller = new EntryController(carpark, entryGate, os, is, ui);
+ +       // controller.ticketInserted("bar1");
+ +        //controller.ticketTaken();
+ +    
+ +    controller.ticketTaken();
+ +    controller.notifyCarparkEvent();
+      }
+      
+  }
